@@ -300,7 +300,7 @@ forplot <- meanhdi %>% distinct() %>%
                             labels=c("aout","bmid","cin","Mean","cin","bmid","aout"))) %>%
   mutate(type="Full")
 
-saveRDS(forplot,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedDev.rds"))
+saveRDS(forplot,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedDev.rds"))
 
 # Full/Deviance - by individual ID
 
@@ -331,7 +331,7 @@ forplot <- meanhdi %>% distinct() %>%
                             labels=c("aout","bmid","cin","Mean","cin","bmid","aout"))) %>%
   mutate(type="Full")
 
-saveRDS(forplot,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedIndividualFull.rds"))
+saveRDS(forplot,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedIndividualFull.rds"))
 
 # KFCV
 
@@ -362,7 +362,7 @@ forplot <- meanhdi %>% distinct() %>%
                             labels=c("aout","bmid","cin","Mean","cin","bmid","aout"))) %>%
   mutate(type="KFCV")
 
-saveRDS(forplot,file=paste0("../Predictions/NoItemEffects/processedKFCV.rds"))
+saveRDS(forplot,file=paste0("../AggPredictions/NoItemEffects/processedKFCV.rds"))
 
 # LOP
 
@@ -393,7 +393,7 @@ forplot <- meanhdi %>% distinct() %>%
                             labels=c("aout","bmid","cin","Mean","cin","bmid","aout"))) %>%
   mutate(type="Full")
 
-saveRDS(forplot,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedLOP.rds"))
+saveRDS(forplot,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedLOP.rds"))
 
 # LOP - by individual ID
 
@@ -424,7 +424,7 @@ forplot <- meanhdi %>% distinct() %>%
                             labels=c("aout","bmid","cin","Mean","cin","bmid","aout"))) %>%
   mutate(type="Full")
 
-saveRDS(forplot,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedIndividualLOP.rds"))
+saveRDS(forplot,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedIndividualLOP.rds"))
 
 
 
@@ -615,7 +615,7 @@ pps2 <- dats %>%
   mutate(pexpT1 = ifelse( round(pexpT1,2) > 0,sub("^0+", "",  round(pexpT1,2)), "0")) %>%
   select(-partraw,-partall)
 
-saveRDS(pps2,"../Predictions/NoItemEffectsRandomCrit/processedDev_ppp.rds")
+saveRDS(pps2,"../AggPredictions/NoItemEffectsRandomCrit/processedDev_ppp.rds")
 
 # Summarize LOOIC ------------------------------
 # for Full/Deviance fits
@@ -657,9 +657,9 @@ for(i in seq_along(d1)){
 }
 
 saveRDS(LOOIC
-        ,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedLOOIC.rds"))
+        ,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedLOOIC.rds"))
 saveRDS(pareto
-        ,file=paste0("../Predictions/NoItemEffectsRandomCrit/processedLOOIC_paretok.rds"))
+        ,file=paste0("../AggPredictions/NoItemEffectsRandomCrit/processedLOOIC_paretok.rds"))
 
 
 
