@@ -1,0 +1,14 @@
+name: RecognitionMemoryModels
+title: RecognitionMemoryModels
+username:
+account: nklange
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5698590
+bundleId: 5762113
+url: https://nklange.shinyapps.io/RecognitionMemoryModels/
+when: 1649069726.86437
+lastSyncTime: 1649069726.86437
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: dss.R

@@ -1,0 +1,13 @@
+name: RecognitionData
+title: RecognitionData
+username:
+account: nklange
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7365543
+bundleId: 6667747
+url: https://nklange.shinyapps.io/RecognitionData/
+when: 1671801020.24053
+lastSyncTime: 1671801020.24053
+asMultiple: FALSE
+asStatic: FALSE
